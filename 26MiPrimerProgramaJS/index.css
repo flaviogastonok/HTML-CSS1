@@ -1,0 +1,38 @@
+body{
+    background-color: #464746;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+    background-color: #5c045f;
+    width: 20%;
+    height: 70%;
+    border-radius: 30px;
+    border: 1px solid #5c045e;
+    padding: 2rem;
+    margin-top: 20%;
+    box-shadow: 1px 5px 5px #333;
+}
+
+.content h2{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.content button{
+    background-color: #F77E21;
+    color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #b35b18;
+    cursor: pointer;
+}
