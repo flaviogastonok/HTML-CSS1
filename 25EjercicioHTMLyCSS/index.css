@@ -1,0 +1,103 @@
+*{box-sizing: border-box;}
+
+html , body{height: 100%;}
+
+body{
+    background-color: #151e33;
+    color: white;
+    font-family: sans-serif;
+    display: flex; /*Para utilizar las caracteristicas de centrado de flex*/
+    justify-content: center; /*Propiedad para centrar sobre el eje x*/
+    align-items: center; /*propiedad para centrar sobre el eje y*/
+}
+
+a{
+    color: #f089a0;
+    text-decoration: none;
+}
+
+/*Create*/
+.create{
+    width:100% ; /*Para hacerlo flexible*/
+    max-width: 785px; /*Lo dejamos crecer hasta 785px*/
+    min-width: 320px; /*El tamaño minimo*/
+    border-radius: 15px;
+    background-color: #1b263e;
+    padding: 3rem; /*"espacio" hacia los lados*/
+}
+
+
+/*Login*/
+
+.login{
+    text-align: right;
+    font-size: 16px;
+}
+
+/*Content*/
+
+.content{ /*Content debe ser mas pequeño que Create*/
+    width: 70%; /*De lo que mida create, content va a ser el 70%*/
+    margin: 3rem auto; /*para centrarlo en esos 70%*/
+}
+
+.content h1 { /*Estilos al H1, debe ir centrado y con un tamaño de letra de 26px*/
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 26px;/*se usa para establecer la distancia entre líneas de texto*/
+    text-align: center;
+}
+
+/*Form*/
+
+.form{
+    margin-top: 2rem;
+}
+
+.form label{ /*el/los label que esten dentro de form*/
+    font-weight: bold; /*estilo NEGRITA*/
+    display: block;/*Solo un label por linea*/
+    font-size: 14px;
+}
+
+.form input:not([type="submit"]){ /*el/los input que esten dentro de form excepto los de tipo submit*/
+    display: block;/*Solo un input por linea*/
+    color: white;
+    font-size: 18px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+    padding: 1.3rem;
+    background-color: transparent;
+    border-radius: 5px; /*redondea las aristas */
+    border: 1px solid #495e8d;/*Le da un borde solido de 1px y color*/
+}
+
+
+form input[type="submit"]{
+    width: 100%;
+    background-color: #f089a0;
+    padding: 1.3rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /*Cuando el puntero este encima se convierta en mano.*/
+}
+
+/*Legal*/
+
+.legal{
+    margin: 0 auto;
+    width: 85%;
+    padding: 2rem;
+    background-color: #202e4e;
+    color: #9f9ab2;
+    font-size: 14px;
+    border-radius: 5px;
+    line-height: 24px;
+}
